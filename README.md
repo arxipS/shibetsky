@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/3375ecaf-f3d0-44dc-ae3c-89f09c20c896)
+
+
 # Установить Linux Oracle на VirtualBox:
 
 
@@ -231,7 +234,7 @@ Cоздаем папки двумя разными способами
 
 
 
-Захом в connection там где мы писали http://prometheus:9090 пишем http://victoriametrics:8428 И заменяем имя из "Prometheus-2" в "Vika" нажимаем на dashboards add visualition выбираем "Vika" снизу меняем на "code" Переходим в терминал и пишем
+Заходим в connection там где мы писали http://prometheus:9090 пишем http://victoriametrics:8428 И заменяем имя из "Prometheus-2" в "Vika" нажимаем на dashboards add visualition выбираем "Vika" снизу меняем на "code" Переходим в терминал и пишем
 
      echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus
 
